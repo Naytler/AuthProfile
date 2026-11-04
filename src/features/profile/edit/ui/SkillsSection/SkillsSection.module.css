@@ -1,0 +1,30 @@
+.selectedTitle {
+  margin: 22px 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #8d4dff;
+  border-radius: 7px;
+  background: #fff;
+  color: #4f4858;
+  padding: 7px 9px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.chip span {
+  color: #ef4d71;
+  font-size: 15px;
+  line-height: 1;
+}

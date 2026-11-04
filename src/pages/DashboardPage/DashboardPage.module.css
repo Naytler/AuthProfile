@@ -1,0 +1,56 @@
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.heading {
+  margin-bottom: 24px;
+}
+
+.heading p {
+  margin: 0 0 5px;
+  color: #6d16ff;
+  font-size: 13px;
+}
+
+.heading h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.grid article {
+  min-height: 130px;
+  padding: 22px;
+  border: 1px solid #ebe7f1;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.grid h2 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+
+.grid p {
+  margin: 0;
+  color: #85808d;
+}
+
+.center {
+  min-height: 40vh;
+  display: grid;
+  place-items: center;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,165 @@
+.shell {
+  min-height: 100vh;
+  display: flex;
+  background: #f7f6f9;
+}
+
+.sidebar {
+  width: 240px;
+  flex: 0 0 240px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-right: 1px solid #ece9ef;
+}
+
+.logo {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 20px;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.logo span {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #6d16ff;
+}
+
+.nav {
+  padding: 18px 10px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-height: 38px;
+  margin: 3px 0;
+  padding: 0 12px;
+  border-radius: 8px;
+  color: #625e69;
+  font-size: 13px;
+}
+
+.navItem span {
+  width: 18px;
+  text-align: center;
+  color: #6d16ff;
+}
+
+.navItem:hover,
+.active {
+  color: #6d16ff;
+  background: #f6f1ff;
+}
+
+.sideBottom {
+  margin-top: auto;
+  padding: 16px 10px;
+}
+
+.sideBottom button:first-child {
+  width: 100%;
+}
+
+.logout {
+  width: 100%;
+  margin-top: 8px;
+  padding: 9px 12px;
+  border: 1px solid #ff5d7c;
+  border-radius: 8px;
+  background: #fff;
+  color: #ef3d63;
+  cursor: pointer;
+}
+
+.main {
+  min-width: 0;
+  flex: 1;
+}
+
+.topbar {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  background: #fff;
+  border-bottom: 1px solid #ece9ef;
+}
+
+.topActions {
+  display: flex;
+  gap: 12px;
+}
+
+.topActions button {
+  border: 0;
+  background: transparent;
+  color: #6b6673;
+  cursor: pointer;
+}
+
+.content {
+  min-height: calc(100vh - 68px - 150px);
+  padding: 30px;
+}
+
+.footer {
+  min-height: 150px;
+  padding: 28px 48px;
+  background: #21004f;
+  color: #fff;
+}
+
+.footer strong {
+  font-size: 17px;
+}
+
+.footer p {
+  color: #c7b7d9;
+  font-size: 12px;
+}
+
+.footer small {
+  color: #a996bb;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    width: 72px;
+    flex-basis: 72px;
+  }
+
+  .logo {
+    justify-content: center;
+    padding: 0;
+    font-size: 0;
+  }
+
+  .navItem {
+    justify-content: center;
+    padding: 0;
+    font-size: 0;
+  }
+
+  .navItem span {
+    font-size: 16px;
+  }
+
+  .sideBottom button {
+    font-size: 0;
+  }
+
+  .content {
+    padding: 18px;
+  }
+}

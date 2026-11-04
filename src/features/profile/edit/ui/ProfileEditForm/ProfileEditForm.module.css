@@ -1,0 +1,77 @@
+.form {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 4px 0 32px;
+}
+
+.top {
+  margin-bottom: 8px;
+}
+
+.top h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.tabs {
+  display: flex;
+  gap: 28px;
+  border-bottom: 1px solid #e9e6ef;
+  margin-bottom: 0;
+  overflow-x: auto;
+}
+
+.tab {
+  position: relative;
+  border: 0;
+  background: transparent;
+  padding: 14px 0 12px;
+  color: #77727f;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.activeTab {
+  color: #6d16ff;
+  font-weight: 600;
+}
+
+.activeTab::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: #6d16ff;
+}
+
+.error {
+  margin: 14px 0;
+  color: #dc3159;
+  font-size: 13px;
+}
+
+.footerActions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  padding-top: 18px;
+}
+
+.cancel {
+  border: 0;
+  background: transparent;
+  color: #6d16ff;
+  cursor: pointer;
+  padding: 12px 18px;
+}
+
+@media (max-width: 700px) {
+  .tabs {
+    gap: 18px;
+  }
+}

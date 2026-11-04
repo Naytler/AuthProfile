@@ -1,0 +1,14 @@
+.hint {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: #d1d1d145;
+  border-radius: 12px;
+  height: 51px;
+  font-size: 14px;
+  line-height: 1.5;
+  min-width: 340px;
+  max-width: 408px;
+  width: 100%;
+}

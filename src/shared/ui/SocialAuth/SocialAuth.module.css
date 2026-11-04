@@ -1,0 +1,16 @@
+.socialAuth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.socialAuth p {
+  font-size: 14px;
+}

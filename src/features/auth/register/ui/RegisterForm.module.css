@@ -1,0 +1,17 @@
+.form {
+  width: min(430px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: #d33;
+  font-size: 13px;
+  margin: 0;
+}

@@ -1,0 +1,138 @@
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 28px 28px 34px;
+  box-shadow: 0 4px 20px rgba(28, 11, 63, .04);
+}
+
+.sectionGrid,
+.simpleGrid {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 46px;
+  padding: 20px 0 30px;
+}
+
+.sectionGrid + .sectionGrid {
+  border-top: 1px solid #f0edf4;
+}
+
+.card h2 {
+  margin: 0 0 7px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hint {
+  margin: 0;
+  color: #85808d;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.fields {
+  min-width: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.field > span {
+  color: #39343f;
+  font-size: 12px;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd8e5;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #fff;
+  color: #29242f;
+  outline: none;
+  font: inherit;
+  font-size: 13px;
+}
+
+.field select {
+  height: 42px;
+}
+
+.field textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: #6d16ff;
+  box-shadow: 0 0 0 2px rgba(109, 22, 255, .08);
+}
+
+.sectionHeadingRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.repeatList {
+  display: grid;
+  gap: 16px;
+}
+
+.repeatCard {
+  border: 1px solid #ece8f1;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.repeatCard .field {
+  margin-top: 16px;
+}
+
+.remove {
+  border: 0;
+  background: transparent;
+  color: #ef4d71;
+  cursor: pointer;
+  padding: 0;
+  font-size: 12px;
+}
+
+.repeatCard .remove {
+  margin-top: 14px;
+}
+
+@media (max-width: 900px) {
+  .sectionGrid,
+  .simpleGrid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
